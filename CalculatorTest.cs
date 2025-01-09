@@ -25,5 +25,19 @@ namespace calc
             Assert.Equal(expectedResult, result);
 
         }
+        [Fact]
+        public void TestSubtract()
+        {
+            Calculator calc = new();
+            int a = 5;
+            int b = 2;
+            int expectedResult = 3;
+
+            //when
+            int result = calc.Subtract(a, b);
+
+            //then
+            Assert.Equal(expectedResult, result);
+        }
     }
 }
